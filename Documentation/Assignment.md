@@ -58,7 +58,7 @@ Steps:
 2. Plug in the MultiFunction board into the mating CN8 & CN9 connectors on top of the Nucleo.
 
 3. Install the MultiFunction Example application by doing the following:
-   
+
    1. Open STM32CubeIDE
    2. Note the directory into which you cloned the repository. Bring it into your STM32CubeIDE workspace with: File/Import/\<*your directory name*\>
    3. Plug in the board to the USB, clean/build/run the project (e.g., the bug button mentioned earlier!)
@@ -67,14 +67,14 @@ Steps:
    Core/Src/main.c to help with the questions that follow.
 
 5. Open the project’s configuration file GUI (ECEN-361-STM32-Lab-01-multiboard.ioc). You should see a graphical representation of the chip along with name definitions, and other parts inside the chip that have been programmed: Timers, Interrupts, etc.  
-   ![](media/ffb74c795735689b31afb1701eec567a.png)  
-   Look through these definitions and compare them to the code that gets generated automatically in: 
-   
-   * main.c, (main execution loop)
-   
-   * stm32l4xx_it.c (interrupt handlers and config)
-   
-   * stm32l4xx_hal_msp.c (hardware abstraction layer)
+   ![](media/ffb74c795735689b31afb1701eec567a.png)
+   Look through these definitions and compare them to the code that gets generated automatically in:
+
+   - main.c, (main execution loop)
+
+   - stm32l4xx_it.c (interrupt handlers and config)
+
+   - stm32l4xx_hal_msp.c (hardware abstraction layer)
 
 ### Part 2: Questions (5pts)
 
@@ -93,17 +93,17 @@ Steps:
 4. What variable would you change to make the first number shown on the 7-segment digits be ‘1234’?
   
    I would change the variable: `Seven_Seg_Count`.
-   
+
 5. What pin on the chip is tied to the potentiometer?
   
    PC1 is the pin connected to the potentiometer.
 
 ## Extra-Credit Opportunities (2pts for any of the following)
 
-* In addition to the changing digits, there is a serial output terminal stream that is reporting status abut every second or so.  Connect a terminal emulator to this stream (Windows: 'PuTTY' or 'Tera Term', Mac: 'screen') and paste a line from its output.
+- In addition to the changing digits, there is a serial output terminal stream that is reporting status abut every second or so.  Connect a terminal emulator to this stream (Windows: 'PuTTY' or 'Tera Term', Mac: 'screen') and paste a line from its output.
   
    Current Tick:  1102114    :   Raw Pot Value: 2382   Delay between number update: 581
 
-* What does the potentiometer do in the program?
+- What does the potentiometer do in the program?
   
    It changes the variable `Increment_Delay` to increase or decrease the amount of time between each update to `Seven_Seg_Count`.
