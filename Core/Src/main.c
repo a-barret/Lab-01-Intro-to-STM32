@@ -102,7 +102,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  // HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, 0);
+//   HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, 0);
 
 
   /* USER CODE END Init */

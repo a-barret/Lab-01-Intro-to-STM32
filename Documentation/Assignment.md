@@ -78,33 +78,32 @@ Steps:
 
 ### Part 2: Questions (5pts)
 
-<mark>I was unable to get the shield to function. The buzzer would loudly play until I adjusted the USB cable just right. I tested two different USB data cables and had the same issue with each. I could use some additional help</mark>
-
 1. What does switch 1 (S1) do?
   
-   <mark>[*answer here*]</mark>
+   It changes the direction that the 7 segment display counts in.
 
 2. What does switch 2 (S2) do?
   
-   <mark>[*answer here*]</mark>
+   It causes LED D1 to toggle on or off.
 
 3. What does switch 3 (S3) do?
   
-   <mark>[*answer here*]</mark>
+   It seems to me that it does nothing.
 
 4. What variable would you change to make the first number shown on the 7-segment digits be ‘1234’?
   
-   <mark>[*answer here*]</mark>
+   I would change the variable: `Seven_Seg_Count`.
+   
 5. What pin on the chip is tied to the potentiometer?
   
-   <mark>[*answer here*]</mark>
+   PC1 is the pin connected to the potentiometer.
 
 ## Extra-Credit Opportunities (2pts for any of the following)
 
 * In addition to the changing digits, there is a serial output terminal stream that is reporting status abut every second or so.  Connect a terminal emulator to this stream (Windows: 'PuTTY' or 'Tera Term', Mac: 'screen') and paste a line from its output.
   
-   <mark>[*answer here*]</mark>
+   Current Tick:  1102114    :   Raw Pot Value: 2382   Delay between number update: 581
 
 * What does the potentiometer do in the program?
   
-   <mark>[*answer here*]</mark>
+   It changes the variable `Increment_Delay` to increase or decrease the amount of time between each update to `Seven_Seg_Count`.
