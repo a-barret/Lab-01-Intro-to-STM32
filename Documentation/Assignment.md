@@ -31,15 +31,15 @@ When completed answer the following questions. Add your answers by editing this 
 
 ### Part 1: Questions (5pts)
 
-1. Platform used (PC/Mac/Linux)?
+1. Platform used (PC/Mac/Linux)? Mac
 
-2. Version of STM32CubeIDE installed?
+2. Version of STM32CubeIDE installed? 2.1.1
 
-3. What GPIO Pin is tied to the LED on the board?
+3. What GPIO Pin is tied to the LED on the board? PA5
 
-4. At what frequency did your light blink?
+4. At what frequency did your light blink? 0.5 times per second (toggled every 1000 ms)
 
-5. What does the “bug” button do?
+5. What does the “bug” button do? Begins debug mode where you can step through code line by line
 
 ![](media/c20a679cbe3a6587283cfc92269d3bfb.png)
 
@@ -77,6 +77,8 @@ Steps:
    * stm32l4xx_hal_msp.c (hardware abstraction layer)
 
 ### Part 2: Questions (5pts)
+
+<mark>I was unable to get the shield to function. The buzzer would loudly play until I adjusted the USB cable just right. I tested two different USB data cables and had the same issue with each. I could use some additional help</mark>
 
 1. What does switch 1 (S1) do?
   
